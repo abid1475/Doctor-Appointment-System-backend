@@ -19,9 +19,9 @@ app.use(express.json());
 conecctDB();
 
 
-app.use('/api/v1', userRoute)
-app.use('/api/v1', doctorRoute)
-app.use('/api/v1', appointmentRoute)
+app.use('/api/v1/user', userRoute)
+app.use('/api/v1/doctor', doctorRoute)
+app.use('/api/v1/appointment', appointmentRoute)
 
 
 app.use(notFound);
